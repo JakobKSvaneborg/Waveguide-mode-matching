@@ -177,7 +177,7 @@ def get_coaxial_modes(q,numModes,order=None): #q is r_outer / r_inner
         
         zeros=allzeros_sorted[:numModes]
         modetype=modetype_sorted[:numModes]
-        zorder=order*np.zeros(numModes) #stores the order of the modes
+        zorder=order*np.ones(numModes) #stores the order of the modes
     return zeros, zorder, modetype
 
 print(get_coaxial_modes(q=1.001,numModes=10)) 
